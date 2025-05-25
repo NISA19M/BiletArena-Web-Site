@@ -1,0 +1,145 @@
+video {
+    position:fixed;
+    z-index: -1;
+    right: 0;
+    bottom:0;
+    width: 100%;
+}
+
+.loginpart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 550px;
+    width: 380px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #26262672;
+    box-shadow: 0 0 20px rgba(0,0,0,1);
+    color: #fff;
+    padding-top: 1px;
+}
+
+
+form h2 {
+    font-size: 50px;
+    font-family: sans-serif;
+    color: #00FFFF;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+form h3 {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #020101;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+form h3 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.input-box{
+    position: relative;
+    width: 350px;
+    height: 70px;
+    margin: 20px 0;
+}
+
+.input-box input {
+    position: absolute;
+    font-family: sans-serif;
+    width: 180px;
+    height: 40px;
+    border:solid 2px #022243;
+    background: #ffffff;
+    text-align: center;
+    outline: none;
+    padding: 0 15px;
+    margin: 20px;
+    margin-left: 60px;
+    color: #000000;
+    border-radius: 40px;
+    outline: none;
+    transition: 0.1s ease;
+}
+
+
+.input-box input:hover,
+.input-box input:focus{
+    width: 200px;
+    margin-left: 50px;
+    border:solid 2px #022243;
+
+}
+
+
+.label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    font-size: 16px;
+    color: #030101;
+    padding: 0 5px;
+    margin: 0 20px;
+    background-color: transparent;
+    transition: 0.2s ease;
+    margin-left: 70px;
+
+}
+
+
+.input-box input:focus + .label,
+.input-box input:valid + .label{
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    height: 7px;
+    line-height: 15px;
+    padding: 0 12px;
+    transform: translate(-15px,-16px);
+    z-index: 1111;
+}
+
+.input-box i{
+    width: 50px;
+    height: 1px;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: #ffffff;
+}
+
+.input-box span{
+    color: #ffffff;
+    position: absolute;
+    top: 55px;
+}
+
+form button {
+    width: 290px;
+    height: 50px;
+    border: none;
+    border-radius: 40px;
+    background: #00FFFF;
+    outline: none;
+    padding: 10px;
+    color: #000110;
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-left: 50px;   
+    box-shadow: 0 0 5px #00FFFF, 0 0 25px #00FFFF ;
+}
+
+
+form button:hover {
+    box-shadow: 0 0 5px #1fc6c6, 0 0 25px #00ffff, 0 0 50px #00FFFF, 0 0 100px #00FFFF, 0 0 200px #00FFFF;
+}

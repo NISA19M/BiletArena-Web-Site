@@ -1,0 +1,173 @@
+/* Genel Ayarlar */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Başlık */
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 30px;
+}
+
+/* Tablo Stili */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table caption {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #3498db;
+    color: #fff;
+}
+
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+th {
+    background-color: #ecf0f1;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Formlar */
+form {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+form h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+input[type="file"] {
+    margin-bottom: 15px;
+}
+
+input[type="submit"],
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Duyuru Alanı */
+.duyuru-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.duyuru {
+    background-color: #fff;
+    border-left: 5px solid #3498db;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.duyuru h3 {
+    margin-top: 0;
+    color: #3498db;
+}
+
+.duyuru p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.duyuru small {
+    color: #999;
+    display: block;
+    margin-top: 10px;
+}
+
+.butonlar {
+    margin-top: 10px;
+}
+
+.butonlar a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.butonlar a.btn-duzenle {
+    background-color: #2ecc71;
+}
+
+.butonlar a:hover {
+    opacity: 0.85;
+}

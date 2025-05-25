@@ -1,0 +1,418 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+@import url(https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css);
+
+nav{
+    position: relative;
+    width: 1500px;
+    height: 50px;
+    background:  #012121;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+nav h2{
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 500;
+    color: #00FFFF;
+    left: 10px;
+    padding: 0 50px;
+}
+
+
+nav a {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    left: 245px;
+    color: white;
+    padding: 0 50px;
+    z-index: 1;
+}
+
+nav span{
+    position: absolute;
+    top: 0;
+    left: 943px;
+    width: 10%;
+    height: 100%;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #012121,  #00FFFF);
+    transition: .5s;
+}
+nav a:nth-child(2):hover~span{
+    left: 495px;
+}
+nav a:nth-child(3):hover~span{
+    left: 648px;
+}
+nav a:nth-child(4):hover~span{
+    left: 796px;
+}
+nav a:nth-child(5):hover~span{
+    left: 943px;
+}
+nav a:nth-child(6):hover~span{
+    left: 1085px;
+}
+nav a:nth-child(7):hover~span{
+    left: 1220px;
+}
+nav a:nth-child(8):hover~span{
+    left: 1355px;
+}
+
+
+.fav{  
+    position: relative;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background:  transparent;
+    justify-content: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.fav h1{
+    color: #ffffff;
+    position: relative;
+    font-family: "Lucida Handwriting", cursive;
+    font-size: 45px;
+    text-align: center;
+}
+
+
+
+
+
+.enler{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+
+.enler .ensevilen{
+    height: 350px;
+    width: 700px;
+    position: relative;
+    margin-left: 75px;
+    margin-top: 30px;
+}
+
+.wrapper{
+    height: 350px;
+    width: 300px;
+    display: inline-block;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+.wrapper .card{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 1px;
+    background: #012121;
+    border-radius: 3px;
+    transform: translateY(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+}
+.wrapper:hover > .front-face{
+    transform: rotateY(-180deg);
+}
+.wrapper .card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+.wrapper .back-face{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transform: rotateY(180deg);
+}
+.wrapper:hover > .back-face{
+    transform: rotateY(0deg);
+}
+.wrapper .back-face img{
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    background: transparent;
+}
+.wrapper .back-face .info{
+    text-align: center;
+    color: #fff;
+}
+
+.wrapper .back-face .info p{
+    margin: 20px;
+    margin-bottom: 0px;
+}
+.back-face .info .title{
+    font-size: 30px;
+    font-weight: 500;
+}
+.back-face ul{
+    display: flex;
+}
+.back-face ul a{
+    margin-bottom: 10px;
+    display: block;
+    height: 40px;
+    width: 40px;
+    color: #012121;
+    text-align: center;
+    margin: 0 5px;
+    font-size: 40px;
+    line-height: 38px;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    background: #fff;
+    transition: all 0.5s ease;
+}
+.back-face ul a:hover{
+    color:#00FFFF;
+    border-color: #00FFFF;
+    background: #fff;
+}
+
+.ensevilen .bilgi{
+    color: #fff;
+    width: 300px;
+    height: 352px;
+    position: absolute;
+    display: inline-block;
+    background-color: #012121;
+}
+
+.ensevilen .bilgi h3{
+    font-size: 30px;
+}
+
+.bilgi i {
+    font-size: 20px;
+}
+.bilgi h4 {
+    font-size: 20px;
+
+}
+
+.bilgi button{
+    left: 50px;
+    position: absolute;
+    top: 10px;
+    font-size: 25px;
+    font-family: sans-serif;
+    width: 150px;
+    border: none;
+    border-radius: 40px;
+    background: #00FFFF;
+    text-align: center;
+    outline: none;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 70px;
+    color: #000000;
+    box-shadow: 0 0 5px #00FFFF, 0 0 25px #00FFFF ;
+}
+
+.bilgi button:hover{
+    box-shadow: 0 0 5px #00FFFF, 0 0 25px #00FFFF, 0 0 50px #00FFFF, 0 0 100px #00FFFF, 0 0 200px #00FFFF;
+}
+
+.ensevilen .bilgi .tarih{
+    height: 80px;
+    width: 80px;
+    position: relative;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    background: #034a4a;
+}
+
+.ensevilen .bilgi .tarih h2{
+    font-size: 30px;
+    margin: 5px;
+}
+
+.ensevilen .bilgi .tarih h1{
+    font-size: 30px;
+    margin: 5px;
+}
+
+
+
+
+
+
+.enalinan{  
+    position: relative;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background:  transparent;
+    justify-content: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.enalinan h1{
+    color: #ffffff;
+    position: relative;
+    font-family: "Lucida Handwriting", cursive;
+    font-size: 45px;
+    text-align: center;
+}
+
+
+
+.yakinlar{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 20px;
+    margin-top: -100px;
+    margin-bottom: 100px;
+}
+
+.yakinlar .enyakin{
+    height: 350px;
+    width: 300px;
+    margin-top: 100px;
+    position: relative;
+}
+
+.enyakin{
+    height: 350px;
+    width: 300px;
+    margin-left: 50px;
+    display: inline-block;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+.enyakin .card{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 1px;
+    background: #012121;
+    border-radius: 3px;
+    transform: translateY(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+}
+.enyakin:hover > .front-face{
+    transform: rotateY(-180deg);
+}
+.enyakin .card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+.enyakin .back-face{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transform: rotateY(180deg);
+}
+.enyakin:hover > .back-face{
+    transform: rotateY(0deg);
+}
+.enyakin .back-face img{
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    background: transparent;
+}
+.enyakin .back-face .info{
+    text-align: start;
+    color: #fff;
+}
+
+
+.info i{
+    font-size: 20px;
+}
+
+.info h4{
+    font-size: 20px;
+}
+
+.back-face .info button{
+    font-size: 25px;
+    font-family: sans-serif;
+    width: 150px;
+    border: none;
+    border-radius: 40px;
+    background: #00FFFF;
+    text-align: center;
+    outline: none;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 70px;
+    color: #000000;
+    box-shadow: 0 0 5px #00FFFF, 0 0 25px #00FFFF ;
+}
+
+.back-face .info button:hover{
+    box-shadow: 0 0 5px #00FFFF, 0 0 25px #00FFFF, 0 0 50px #00FFFF, 0 0 100px #00FFFF, 0 0 200px #00FFFF;
+}
+
+.enyakin h1{
+    font-size: 20px;
+    width: 300px;
+    color: #fff;
+}
+
+
+.latest{
+    width: 100%;
+    height: 150px;
+    background: #fff;
+}
+
+.latest h1{
+    color: #000000;
+    text-align: center;
+    font-family: "Lucida Handwriting", cursive;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+.hava-durumu{
+    margin: auto;
+    font-weight: bold;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    display: table;
+    align-items: center;
+    background-image: url(gok.jpg);
+    background-size: cover;
+    color: #000000;
+}

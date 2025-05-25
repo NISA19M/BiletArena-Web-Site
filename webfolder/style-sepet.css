@@ -1,0 +1,116 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+@import url(https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css);
+
+nav{
+    position: relative;
+    width: 1600px;
+    height: 50px;
+    background:  #012121;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin-left: -10px;
+}
+
+nav h2{
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 500;
+    color: #00FFFF;
+    padding: 0 50px;
+}
+
+
+nav a {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    left: 245px;
+    color: white;
+    padding: 0 50px;
+    z-index: 1;
+}
+
+nav span{
+    position: absolute;
+    top: 0;
+    left: 1400px;
+    width: 10%;
+    height: 100%;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #012121,  #00FFFF);
+    transition: .5s;
+}
+nav a:nth-child(2):hover~span{
+    left: 540px;
+}
+nav a:nth-child(3):hover~span{
+    left: 700px;
+}
+nav a:nth-child(4):hover~span{
+    left: 845px;
+}
+nav a:nth-child(5):hover~span{
+    left: 993px;
+}
+nav a:nth-child(6):hover~span{
+    left: 1135px;
+}
+nav a:nth-child(7):hover~span{
+    left: 1270px;
+}
+nav a:nth-child(8):hover~span{
+    left: 1400px;
+}
+
+
+h2{
+    font-size: 36px;
+    font-family: "Lucida Handwriting", cursive;
+    color: #00FFFF;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    font-family:  "Lucida Handwriting", cursive;
+    color: #00FFFF;
+    text-align: center;
+}
+
+form{
+    background-color: #012121;
+}
+
+form table, th, td{
+    border: 2px solid rgb(23, 169, 222);
+    width: 800px;
+    border-collapse: collapse;
+    caption-side: top;
+    text-align: center;
+}
+
+form tr,td {
+    color: #fff;
+    font-size: 22px;
+}
+
+
+
+.latest{
+    width: 100%;
+    height: 150px;
+    background: #fff;
+}
+
+.latest h1{
+    color: #000000;
+    text-align: center;
+    font-family: "Lucida Handwriting", cursive;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}

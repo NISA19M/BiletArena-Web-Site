@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(226, 252, 255);
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    text-align: center;
+}
+table, th, td{
+    border: 1px solid rgb(23, 169, 222);
+    width: 800px;
+    border-collapse: collapse;
+    caption-side: top;
+    text-align: center;
+}
+
+
+form{
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+    background-color: rgb(122, 244, 255);
+    width: 400px;
+}
+
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+
+.duyuru-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.duyuru {
+    background-color: #fff;
+    border-left: 5px solid #007BFF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.duyuru h3 {
+    margin: 0 0 10px;
+    color: #007BFF;
+}
+
+.duyuru p {
+    margin: 0 0 15px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.duyuru small {
+    display: block;
+    color: #888;
+    font-size: 0.9em;
+}
