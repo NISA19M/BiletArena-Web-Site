@@ -39,7 +39,6 @@ if (isset($_GET['onayla'])) {
 }
 
 if (isset($_POST["enyakin"])) {
-     // Form verilerini al
     $baslik = mysqli_real_escape_string($baglanti, $_POST['baslik']);
     $sehir = mysqli_real_escape_string($baglanti, $_POST['sehir']);
     $mekan = mysqli_real_escape_string($baglanti, $_POST['mekan']);
@@ -50,7 +49,6 @@ if (isset($_POST["enyakin"])) {
     $kontenjan = $kontenjan_baslangic;
 
 
-    // Afiş dosyasını işle
     $afis_ad = null;
     if (isset($_FILES['afis']) && $_FILES['afis']['error'] == 0) {
         $izinli_uzantilart = ['jpg', 'jpeg', 'png', 'gif'];
@@ -79,7 +77,7 @@ if (isset($_POST["enyakin"])) {
 
     $sayfa = mysqli_real_escape_string($baglanti, $_POST['sayfa']);
 
-    // Veritabanına kayıt
+
     $kayit = "INSERT INTO yakinlar (baslik, sehir, mekan, tarih, saat, afis, sayfa, fiyat, kontenjan, kontenjan_baslangic) VALUES ('$baslik', '$sehir', '$mekan', '$tarih', '$saat', '$afis_ad', '$sayfa', '$fiyat', '$kontenjan', '$kontenjan_baslangic')";
 
 
