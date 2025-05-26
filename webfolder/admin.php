@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 include("baglanti.php");https://www.eventbrite.com/
 
